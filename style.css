@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    /*background-color: #26A56C;*/
+    background-image: url(correimage/calle2.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/*.titulos {
+    text-align: center;
+    margin-top: 60px;
+}*/
+
+nav {
+    background-color: #26A56C;
+    padding: 30px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    background-image: url(correimage/logocorre-1.png);
+    background-repeat: no-repeat;
+    background-position: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-decoration: none;
+}
+
+nav ul li {
+
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-out;
+}
+
+li a:hover {
+    color: black;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+}
+
+section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+
+}
+
+.servicios {
+    padding: 50px;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.ventana {
+    background: linear-gradient(135deg,
+            rgba(255, 255, 255, 0.1),
+            rgba (255, 255, 255, 0.1));
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: (21px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 24px;
+}
+
+.serv-ali {
+    padding: 50px;
+    margin-top: 50px;
+    width: 250px;
+    list-style: circle;
+    height: 400px;
+}
+
+.serv-ali ul li {
+    list-style: inside;
+}
+
+.serv-ali h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+img[alt^="logo"] {
+    border-radius: 100%;
+    background-position: 0;
+}
+
+#slider {
+    margin: auto;
+    background-color: transparent;
+    max-width: 700px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+#slider>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#slider>ul.slider-ul {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+}
+
+#slider>ul.slider-ul li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: transparent;
+}
+
+#slider>ul.slider-ul li img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#slider>ul.slider-ul li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#slider>ul.slider-ul li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#slider>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#slider>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#slider>.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: grey;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+footer {
+    background-color: #26A56C;
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px;
+}
